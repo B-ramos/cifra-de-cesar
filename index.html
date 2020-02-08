@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="funcoes.js"></script>
+    <title>Cifra de Cesar</title>
+</head>
+
+<body>
+    <h2>Cifra de cesar</h2>
+
+    <form id="div_cesar">
+        <fieldset>
+            <div>
+                <label> Digite o número de casas desejadas: </label>
+                <input type="text" id="casas" required minlength="1" maxlength="2" size="2px">
+            </div>
+
+            <div>
+                <label> Mensagem a ser codificada: </label>
+                <input type="text" id="texto" size="100px">
+                <input type="button" value="Decodificar" onclick="codificar()">
+                <p id="palavraCodificada">************************</div>
+
+            <div>
+                <label> Mensagem a ser descodificada: </label>
+                <input type="text" id="textoDescodificado" size="94px">
+                <input type="button" value="Descodificado" onclick="descodificar()">
+                <p id="palavraDescodificada">************************</p>
+            </div>
+
+        </fieldset>
+    </form>
+
+    <h2>POST</h2>
+
+    <div id="div_post">
+        <!--form method="POST" enctype="multipart/form-data" action="https://**api.codenation.dev/v1/challenge/dev-ps/submit-solution?token=441747e2fb36fc2532078da3a401e9de8be9b54c"> -->
+        <form method="POST" enctype="multipart/form-data"
+            action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
+            Arquivo Json: <input type="file" name="answer">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+</body>
+
+</html>
